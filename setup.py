@@ -5,7 +5,7 @@ import sys
 
 
 setup(name='ppb_timing',
-    version='0.1.0',
+    version='0.1.1',
     description='A timing system for PursuedPyBear games.',
     author='Calvin Spealman',
     author_email='ironfroggy@gmail.com',
