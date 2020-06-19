@@ -34,7 +34,8 @@ class Timers(System):
     @classmethod
     def repeat(cls, seconds, func, until=None):
         n = get_time()
-        t = Timer(n + seconds, func, repeating=seconds, until=n + until)
+        until = until if until is None else n + until
+        t = Timer(n + seconds, func, repeating=seconds, until=until)
         cls.timers.add(t)
         return t
 
